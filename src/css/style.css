@@ -18,7 +18,7 @@ html {
   height: 100svh;
   background-color: #000000;
   /*change background image here */
-  background-image: url("../img/beat.png");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   overflow-x: clip;
 }
