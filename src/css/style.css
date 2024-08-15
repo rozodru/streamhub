@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "SpaceMono Nerd Font";
+  font-display: swap;
+  src:
+    local("SpaceMono Nerd Font"),
+    url(),
+    url();
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  background-color: #000000;
+  /*change background image here */
+  background-image: url("../img/beat.png");
+  background-size: cover;
+  overflow-x: clip;
+}
+
+html.loaded {
+  transition: background-color 0.2s ease-in-out;
+}
+
+body {
+  display: grid;
+  font-family: SpaceMono Nerd Font, monospace;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+#main {
+  text-shadow: 2px 2px black;
+}
+
+
+
+#greeting {
+  font-size: 2.5em;
+  /* change title color */
+  color: #fff;
+  font-weight: 900;
+  grid-column: 1/-1;
+  text-align: center;
+  display: grid;
+}
+
+.header {
+  font-size: 1.6em;
+  font-weight: 600;
+  /* change header color */
+  color: #fff;
+}
+
+#stream {
+  margin-top: 5%;
+  display: grid;
+  /* change streamer border here */
+  border: 3px solid #fff !important;
+  border-radius: 10px;
+}
+
+#links {
+  margin-top: 5%;
+  display: grid;
+  grid-row-gap: 0.5em;
+  grid-template-columns: repeat(3, 1fr);
+  /* change info panel border/color here */
+  border: 3px solid #fff !important;
+  border-radius: 10px;
+  padding: 0.01em 16px;
+}
+
+/* link color */
+a {
+  color: #fff;
+}
+
+/*icon color */
+.fa-brands {
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1em;
+  margin-left: 0;
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>stream hub</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://kit.fontawesome.com/50ca4bca32.js" crossorigin="anonymous"></script>
+  <link href="src/css/style.css" rel="stylesheet" /><!-- bg can be replaced in the stylesheet-->
+</head>
+
+<body>
+  <div id="main">
+    <div id="greeting">Title of your Channel or Logo</div>
+    <div id="stream">
+      <!-- stream embed can be twitch, youtube, kick, tiktok, etc -->
+      <!-- example here will be twitch -->
+      <div id="twitch-embed"></div>
+
+      <!-- Load the Twitch embed JavaScript file -->
+      <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+      <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+      <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+          width: "100%",
+          height: 600,
+          channel: "sodapoppin", <!-- just put in the your twitch channel/username -->
+        });
+      </script>
+    </div>
+    <div id="links">
+      <!-- comment out or remove any socal links you don't need -->
+      <div class="urls">
+        <div class="header">socials</div>
+        <ul>
+          <li><i class="fa-brands fa-discord"></i> <a href="">discord.gg</a></li>
+          <li><i class="fa-brands fa-x-twitter"></i> <a href="">twitter</a></li>
+          <li><i class="fa-brands fa-youtube"></i> <a href="">youtube</a></li>
+          <li><i class="fa-brands fa-instagram"></i> <a href="">instagram</a></li>
+          <li><i class="fa-brands fa-bluesky"></i> <a href="">bluesky</a></li>
+          <li><i class="fa-brands fa-facebook"></i> <a href="">fb</a></li>
+        </ul>
+      </div>
+      <div class="urls">
+        <div class="header">donate</div>
+        <ul>
+          <li><i class="fa-brands fa-paypal"></i> <a href="">paypal</a></li>
+          <li><i class="fa-brands fa-patreon"></i> <a href="">patreon</a></li>
+          <li><i class="fa-brands fa-onlyfans"></i> <a href="">onlyfans</a></li>
+        </ul>
+      </div>
+      <div class="urls">
+        <div class="header">banners</div>
+        <ul>
+          <li>you can put in some banners for ads here</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
